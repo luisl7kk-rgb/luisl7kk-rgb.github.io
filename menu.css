@@ -1,0 +1,78 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #778686;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Faixa do topo */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #ff4b2b); /* Preto para Vermelho */
+    color: rgb(252, 250, 164);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Caixa branca central */
+.container {
+    max-width: 600px;
+    background: rgba(85, 84, 84, 0.425);
+    margin: -40px 20px 40px 20px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Etiqueta de Promoção */
+.promo-badge {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* O BOTÃO QUE VAI PULSAR */
+.btn-desconto {
+ display: inline-block;
+    background: #1aa153; /* Verde */
+    color: rgb(248, 242, 242);
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    
+    /* Ativa a animação de pulso */
+    animation: pulse 2s infinite; 
+}
+
+/* Efeito de passar o mouse no botão */
+.btn-desconto:hover {
+    background: #2ecc71;
+}
+
+/* Regra do movimento de pulso */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Rodapé */
+footer {
+    padding: 20px;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
